@@ -21,7 +21,7 @@ func main() {
 
 	getRouter.HandleFunc("/", test)
 
-	log.Fatal(http.ListenAndServe(":8080", routes))
+	log.Fatal(http.ListenAndServe(":80", routes))
 
 }
 
