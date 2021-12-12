@@ -43,7 +43,7 @@ jobs:
             HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           run:  heroku container:push -a app-guilherme-test web
 
-         - name: release
+        - name: release
           env: 
             HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           run:  heroku container:release -a app-guilherme-test web
