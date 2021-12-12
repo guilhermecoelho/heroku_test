@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/gorilla/mux"
+	"github.com/joho/godotenv"
 )
 
 type Moviment struct {
@@ -15,6 +16,8 @@ type Moviment struct {
 }
 
 func main() {
+
+	godotenv.Load()
 
 	routes := mux.NewRouter().StrictSlash(true)
 
