@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
@@ -21,7 +22,7 @@ func main() {
 
 	getRouter.HandleFunc("/", test)
 
-	log.Fatal(http.ListenAndServe(":80", routes))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), routes))
 
 }
 
