@@ -30,6 +30,6 @@ jobs:
         - uses: akhileshns/heroku-deploy@v3.12.12
           with:
                 heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                heroku_app_name: "app-guilherme-kakeibo"
+                heroku_app_name: "app-guilherme-test"
                 heroku_email: "guilhermecoelho2@gmail.com"
       
